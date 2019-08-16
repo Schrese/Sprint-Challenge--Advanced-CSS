@@ -3,9 +3,65 @@
 .home {
 
   .intro {
+    .header-img {
+      position: fixed;
+      z-index: 2;
+      opacity: 0.9;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+      padding-left: 10%;
+      padding-bottom: 10%;
+
+      h2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 35%;
+
+        @media @phone {
+          padding-top: 60%;
+        }
+      }
+
+      p {
+        padding: 5% 0;
+        padding-left: 3%;
+      }
+      h3 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+      }
+      .resistance {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 5%;
+      }
+        .btn {
+          .custom-btn();
+          padding-bottom: 5%;
+
+          @media @phone {
+            width: 100%;
+          }
+          
+        }
+    }
 
     h2 {
       padding: 15px;
+      padding-top: 30%;
+
+      @media @phone {
+        padding-top: 50%;
+      }
     }
 
     p {
@@ -121,4 +177,7 @@
       }
     }
   }
+
+
+
 }// home
