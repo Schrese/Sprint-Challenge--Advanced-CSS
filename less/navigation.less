@@ -1,29 +1,33 @@
 // Navigation code here
 
 .navigation {
-    display: flex;
+    .flex();
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: 0 auto;
 
+   
     h1 {
         font-size: 5rem;
         padding-top: 5%;
     }
 
     nav {
-        display: flex;
+        .flex();
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
         flex-wrap: nowrap;
+
+        @media @phone {
+            width: 95%;
+            padding-left: 5%;
+        }
+    
         
 
         a {
-            display: inline;
             display: flex;
             justify-content: space-evenly;
             padding: 5%;
@@ -34,6 +38,11 @@
             font-size: 1.3rem;
             text-align: center;
 
+            @media @phone {
+                width: 110px;
+                padding: 2%;
+            }
+        
         }
     }
 }
