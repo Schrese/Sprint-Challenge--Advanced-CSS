@@ -1,1 +1,50 @@
 // Navigation code here
+
+.navigation {
+    .flex();
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 3;
+
+    h1 {
+        font-size: 5rem;
+        padding-top: 5%;
+        padding-bottom: 15%;
+    }
+
+    nav {
+        .flex();
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        @media @phone {
+            width: 95%;
+            padding-left: 5%;
+        }
+    
+        
+
+        a {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 5%;
+            width: 120px;
+            flex-wrap: nowrap;
+            text-decoration: none;
+            color: black;
+            font-size: 1.3rem;
+            text-align: center;
+
+            @media @phone {
+                width: 110px;
+                padding: 2%;
+            }
+        
+        }
+    }
+}
